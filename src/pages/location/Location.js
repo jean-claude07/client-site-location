@@ -116,7 +116,7 @@ export class Location extends Component {
                     
                     <div className="card">
                         <div className="card-body" style={{backgroundColor:'silver'}}>
-                            <p><stro> </stro>Pour les locations, veuillez vous rendre dans <Link href="/espace_client">
+                            <p><stro> </stro>Pour les locations, veuillez vous rendre dans <Link to="/espace_client">
                                 Espace client</Link> pour vous connecter .</p>
                         </div>
                     </div>
