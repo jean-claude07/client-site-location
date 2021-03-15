@@ -39,12 +39,12 @@ export class Pupitre extends Component {
                         card = (
                                 <div class="col-lg-4 col-md-6 portfolio-item " data-wow-delay="0.2s">
                                     <div class="portfolio-wrap">
-                                    <img src={`http://localhost:4000/${produit.produitphoto.url}`} class="img-fluid" alt=""/>
+                                    <img src={`https://apilocation.herokuapp.com/${produit.produitphoto.url}`} class="img-fluid" alt=""/>
                                         <div class="portfolio-info">
                                             <h4><a href="#">{produit.nom} </a></h4>
                                             <p>{produit.groupe} </p>
                                             <div>
-                                            <a href={`http://localhost:4000/${produit.produitphoto.url}`} data-lightbox="portfolio" data-title={produit.nom} class="link-preview" title="Preview">
+                                            <a href={`https://apilocation.herokuapp.com/${produit.produitphoto.url}`} data-lightbox="portfolio" data-title={produit.nom} class="link-preview" title="Preview">
                                                 <i class="ion ion-eye"></i>
                                             </a>
                                             <a className="link-details" title="More Details" data-toggle="modal" data-target={modal}>

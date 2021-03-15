@@ -155,7 +155,7 @@ export class Location extends Component {
                 <div className="container">
                     <div className="row">
                         <div className="col-lg-6 col-md-6">
-                            <img src={`http://localhost:4000/${produit.produitphoto.url}`} className="img-fluid" alt=""/>
+                            <img src={`https://apilocation.herokuapp.com/${produit.produitphoto.url}`} className="img-fluid" alt=""/>
                         </div>
                         <div className="col-sm-6 col-md-6">
                             <div className="container">

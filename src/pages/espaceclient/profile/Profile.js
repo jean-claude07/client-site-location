@@ -88,7 +88,7 @@ export class Profile extends Component {
                         <div class="col-xs-12 col-lg-4">
                         <div class="card">
                             <div class="card-header">
-                                <img src={`http://localhost:4000/${user && user.photoUser.url}`} class="rounded-circle" alt="..." width="200px" height="100px" 
+                                <img src={`https://apilocation.herokuapp.com/${user && user.photoUser.url}`} class="rounded-circle" alt="..." width="200px" height="100px" 
                                     style={{border: '3px', borderColor: 'blueviolet', backgroundColor: 'blueviolet'}}
                                 />
                             </div>

@@ -35,7 +35,7 @@ export class Header extends Component {
             if(localStorage.token === user_token){
                 connect = (
                     <>
-                        <li class="drop-down"><a href=""><img src={`http://localhost:4000/${user && user.photoUser.url}`} class="photoHeader" alt="..." 
+                        <li class="drop-down"><a href=""><img src={`https://apilocation.herokuapp.com/${user && user.photoUser.url}`} class="photoHeader" alt="..." 
                                         style={{border: '3px', borderColor: 'blueviolet', backgroundColor: 'blueviolet'}}
                             /> </a>
                             <ul>

@@ -134,15 +134,19 @@ export class Footer extends Component {
                                         <div class="">
                                             <Field type="text" name="name" class="form-control"  placeholder="Nom d'utilisateur"  required/>
                                         </div>
+                                        <br/>
                                         <div class="">
                                             <Field type="email" class="form-control" name="email"  placeholder="Votre email"  required/>
                                         </div>
+                                        <br/>
                                         <div class="">
                                             <Field type="text" class="form-control" name="subject"  placeholder="sujet"  required />
                                         </div>
+                                        <br/>
                                         <div class="">
                                             <Field type="number" class="form-control" name="telephone" placeholder="Votre numero telephone" required />
                                         </div>
+                                        <br/>
                                         <div class="">
                                             <textarea class="form-control" name="message" 
                                             placeholder="Votre  message svp!" onChange={this.handleChange} required ></textarea>
