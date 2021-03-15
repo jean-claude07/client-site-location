@@ -1,4 +1,4 @@
-import {BrowserRouter, Route, Switch} from 'react-router-dom';
+import {BrowserRouter, Route, Switch, HashRouter} from 'react-router-dom';
 import './App.css'
 import Footer from './components/Footer';
 import Header from './components/Header';
@@ -8,7 +8,7 @@ import Location from './pages/location/Location';
 
 function App() {
   return (
-    <>
+    <HashRouter>
       <BrowserRouter>
           <Header/>
             <Switch>
@@ -19,7 +19,7 @@ function App() {
 
           <Footer/>
       </BrowserRouter>
-    </>
+    </HashRouter>
   );
 }
 

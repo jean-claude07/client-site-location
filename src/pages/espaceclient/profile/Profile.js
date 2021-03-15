@@ -1,13 +1,59 @@
 import React, { Component } from 'react'
-import { date } from 'yup/lib/locale';
-import person_2 from '../../../photo/person_2.jpg'
 
 export class Profile extends Component {
+    state={
+        list: this.props.user.user
+    }
     render() {
         const user = this.props.user.user.client
-        const locations = this.props.user.user.location
+        const locations = this.state.list.location
         const date = new Date(user.created_at);
         const daty = date.toLocaleDateString()
+
+        let userLocation;
+        if(this.state.list){
+            userLocation = (
+                <>
+                    {locations && locations.map(location => {
+                        const total = location.nombre * location.cout
+                        let payment;
+                        if(location.payment === "OK"){
+                            payment = (
+                                <button class="btn btn-danger" type="button" disabled style={{backgroundColor: 'red'}}>
+                                    <span class="spinner-grow spinner-grow-sm" role="status" aria-hidden="true"></span>
+                                    
+                                    Payer
+                                </button>
+                            )
+                        }else{
+                            payment = (
+                                <button class="btn btn-primary" type="button" disabled>
+                                    <span class="spinner-grow spinner-grow-sm" role="status" aria-hidden="true"></span>
+                                    
+                                    Non payer
+                                </button>
+                            )
+                        }
+                        
+                        return (
+
+                            <tr>
+                            <th scope="row">
+                                <div  width="50px" height="50px">
+                                    {location.date}
+                                </div>  
+                            </th>
+                            <td>{location.nomProduit} </td>
+                            <td><strong className="text-warning">{total} Ariary </strong></td>
+                            <td>
+                                    {payment}
+                            </td>
+                            </tr>
+                        )
+                    })}
+                </>
+            )
+        } 
         return (
             <div>
                 <br/><br/>
@@ -40,43 +86,7 @@ export class Profile extends Component {
                                         </tr>
                                     </thead>
                                     <tbody>
-                                        {locations && locations.map(location => {
-                                            const total = location.nombre * location.cout
-                                            let payment;
-                                            if(location.payment === "OK"){
-                                                payment = (
-                                                    <button class="btn btn-danger" type="button" disabled style={{backgroundColor: 'red'}}>
-                                                        <span class="spinner-grow spinner-grow-sm" role="status" aria-hidden="true"></span>
-                                                        {/* <span class="sr-only">Loading...</span> */}
-                                                        Payer
-                                                    </button>
-                                                )
-                                            }else{
-                                                payment = (
-                                                    <button class="btn btn-primary" type="button" disabled>
-                                                        <span class="spinner-grow spinner-grow-sm" role="status" aria-hidden="true"></span>
-                                                        {/* <span class="sr-only">Loading...</span> */}
-                                                        Non payer
-                                                    </button>
-                                                )
-                                            }
-                                            
-                                            return (
-
-                                                <tr>
-                                                <th scope="row">
-                                                    <div  width="50px" height="50px">
-                                                        {location.date}
-                                                    </div>  
-                                                </th>
-                                                <td>{location.nomProduit} </td>
-                                                <td><strong className="text-warning">{total} Ariary </strong></td>
-                                                <td>
-                                                        {payment}
-                                                </td>
-                                                </tr>
-                                            )
-                                        })}
+                                        {userLocation}
                                         
                                     </tbody>
                                 </table>
