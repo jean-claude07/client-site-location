@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 export default function Intro() {
     return (
@@ -9,7 +10,7 @@ export default function Intro() {
                     <div class="col-md-6 intro-info order-md-first order-last">
                     <h2>Depuis 10 ans  <br/>59bis vous propose <span>ses games de produit</span></h2>
                     <div>
-                        <a href="espace_client" class="btn-get-started scrollto">Espace client</a>
+                        <Link href="/espace_client" class="btn-get-started scrollto">Espace client</Link>
                     </div>
                     </div>
             
