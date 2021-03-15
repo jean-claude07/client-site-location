@@ -12,8 +12,8 @@ function App() {
       <BrowserRouter>
           <Header/>
             <Switch>
-              <Route exact path="/" component={HomePage}/>
-              <Route exact path="/espace_client" component={EspaceClient}/>
+              <Route  path="/" component={HomePage}/>
+              <Route  path="/espace_client" component={EspaceClient}/>
               <Route path="/location/:id" component={Location}/>
             </Switch>
 
