@@ -1,0 +1,26 @@
+{
+  "files": {
+    "main.css": "/jean-claude07.io/client-site-location/static/css/main.a455a219.chunk.css",
+    "main.js": "/jean-claude07.io/client-site-location/static/js/main.d8e3874a.chunk.js",
+    "main.js.map": "/jean-claude07.io/client-site-location/static/js/main.d8e3874a.chunk.js.map",
+    "runtime-main.js": "/jean-claude07.io/client-site-location/static/js/runtime-main.e1b4b899.js",
+    "runtime-main.js.map": "/jean-claude07.io/client-site-location/static/js/runtime-main.e1b4b899.js.map",
+    "static/css/2.4a1c4e08.chunk.css": "/jean-claude07.io/client-site-location/static/css/2.4a1c4e08.chunk.css",
+    "static/js/2.ce7af75a.chunk.js": "/jean-claude07.io/client-site-location/static/js/2.ce7af75a.chunk.js",
+    "static/js/2.ce7af75a.chunk.js.map": "/jean-claude07.io/client-site-location/static/js/2.ce7af75a.chunk.js.map",
+    "static/js/3.cf21ef5a.chunk.js": "/jean-claude07.io/client-site-location/static/js/3.cf21ef5a.chunk.js",
+    "static/js/3.cf21ef5a.chunk.js.map": "/jean-claude07.io/client-site-location/static/js/3.cf21ef5a.chunk.js.map",
+    "index.html": "/jean-claude07.io/client-site-location/index.html",
+    "static/css/2.4a1c4e08.chunk.css.map": "/jean-claude07.io/client-site-location/static/css/2.4a1c4e08.chunk.css.map",
+    "static/css/main.a455a219.chunk.css.map": "/jean-claude07.io/client-site-location/static/css/main.a455a219.chunk.css.map",
+    "static/js/2.ce7af75a.chunk.js.LICENSE.txt": "/jean-claude07.io/client-site-location/static/js/2.ce7af75a.chunk.js.LICENSE.txt",
+    "static/media/person_2.9295e96d.jpg": "/jean-claude07.io/client-site-location/static/media/person_2.9295e96d.jpg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.e1b4b899.js",
+    "static/css/2.4a1c4e08.chunk.css",
+    "static/js/2.ce7af75a.chunk.js",
+    "static/css/main.a455a219.chunk.css",
+    "static/js/main.d8e3874a.chunk.js"
+  ]
+}
