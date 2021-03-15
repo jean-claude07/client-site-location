@@ -1,4 +1,4 @@
-import {BrowserRouter, Route, Switch, withRouter} from 'react-router-dom';
+import {BrowserRouter, Route, Switch} from 'react-router-dom';
 import './App.css'
 import Footer from './components/Footer';
 import Header from './components/Header';
@@ -12,9 +12,9 @@ function App() {
       <BrowserRouter>
           <Header/>
             <Switch>
-              <Route  path="/" component={withRouter(HomePage)}/>
-              <Route exact  path="/espace_client" component={withRouter(EspaceClient)}/>
-              <Route exact path="/location/:id" component={withRouter(Location)}/>
+              <Route exact  path="/" component={HomePage}/>
+              <Route exact  path="/espace_client" component={EspaceClient}/>
+              <Route exact path="/location/:id" component={Location}/>
             </Switch>
 
           <Footer/>
