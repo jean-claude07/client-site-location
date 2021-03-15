@@ -1,4 +1,4 @@
-import {BrowserRouter, HashRouter, Route, Switch} from 'react-router-dom';
+import {BrowserRouter, Route, Switch} from 'react-router-dom';
 import './App.css'
 import Footer from './components/Footer';
 import Header from './components/Header';
@@ -9,7 +9,7 @@ import Location from './pages/location/Location';
 function App() {
   return (
     <>
-      <HashRouter>
+      <BrowserRouter>
           <Header/>
             <Switch>
               <Route  path="/" component={HomePage}/>
@@ -18,7 +18,7 @@ function App() {
             </Switch>
 
           <Footer/>
-      </HashRouter>
+      </BrowserRouter>
     </>
   );
 }
