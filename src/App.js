@@ -8,18 +8,20 @@ import Location from './pages/location/Location';
 
 function App() {
   return (
-    <HashRouter>
+    <>
       <BrowserRouter>
           <Header/>
             <Switch>
-              <Route exact  path="/" component={HomePage}/>
-              <Route exact  path="/espace_client" component={EspaceClient}/>
-              <Route exact path="/location/:id" component={Location}/>
+              <HashRouter>
+                <Route exact  path="/" component={HomePage}/>
+                <Route exact  path="/espace_client" component={EspaceClient}/>
+                <Route exact path="/location/:id" component={Location}/>
+              </HashRouter>
             </Switch>
 
           <Footer/>
       </BrowserRouter>
-    </HashRouter>
+    </>
   );
 }
 
