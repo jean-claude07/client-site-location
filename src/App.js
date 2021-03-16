@@ -12,11 +12,11 @@ function App() {
       <BrowserRouter>
           <Header/>
             <Switch>
-              <HashRouter>
+              <>
                 <Route exact  path="/" component={HomePage}/>
                 <Route exact  path="/espace_client" component={EspaceClient}/>
                 <Route exact path="/location/:id" component={Location}/>
-              </HashRouter>
+              </>
             </Switch>
 
           <Footer/>
